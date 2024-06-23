@@ -51,7 +51,7 @@ publishMods {
     displayName = "Customizable Carts Beta v$project.version+${libs.minecraft.get().getVersionConstraint().displayName}"
     file = remapJar.archiveFile
     changelog = file("$rootDir/CHANGELOG.md").text
-    version = "v${project.version}}"
+    version = "v${project.version}"
     type = BETA
     modLoaders.addAll("fabric", "quilt")
     curseforge {
@@ -77,7 +77,7 @@ publishMods {
         tagName = "v$project.version"
     }
 
-    dryRun = false
+    dryRun = true
 }
 
 def targetJavaVersion = 21
