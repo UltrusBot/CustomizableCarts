@@ -1,0 +1,7 @@
+{
+  "item": "customizablecarts:gold_minecart",
+  "model": {
+    "type": "customizablecarts:default",
+    "texture": "customizablecarts:textures/entity/minecart/gold_minecart.png"
+  }
+}

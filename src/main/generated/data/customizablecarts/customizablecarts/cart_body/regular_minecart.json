@@ -1,0 +1,7 @@
+{
+  "item": "minecraft:minecart",
+  "model": {
+    "type": "customizablecarts:default",
+    "texture": "minecraft:textures/entity/minecart.png"
+  }
+}

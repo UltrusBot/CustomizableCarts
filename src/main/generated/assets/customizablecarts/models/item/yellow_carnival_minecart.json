@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "customizablecarts:item/yellow_carnival_minecart"
+  }
+}

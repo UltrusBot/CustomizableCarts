@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "customizablecarts",
+  "version": "${version}",
+  "name": "CustomizableCarts",
+  "description": "Customizable Carts adds a variety of new minecart designs to the game found in a variety of structures.",
+  "authors": [
+    "UltrusBot"
+  ],
+  "contact": {
+    "repo": "https://github.com/UltrusBot/CustomizableCarts"
+  },
+  "license": "MIT",
+  "icon": "assets/customizablecarts/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.ultrusmods.customizablecarts.client.CustomizableCartsClient"
+    ],
+    "main": [
+      "me.ultrusmods.customizablecarts.CustomizableCarts"
+    ],
+    "fabric-datagen": [
+      "me.ultrusmods.customizablecarts.datagen.CustomizableCartsDatagen"
+    ]
+  },
+  "accessWidener": "customizablecarts.accesswidener",
+  "mixins": [
+    "customizablecarts.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "1.21"
+  }
+}

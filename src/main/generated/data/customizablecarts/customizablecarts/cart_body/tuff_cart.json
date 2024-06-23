@@ -1,0 +1,7 @@
+{
+  "item": "customizablecarts:tuff_minecart",
+  "model": {
+    "type": "customizablecarts:two_layer",
+    "texture": "customizablecarts:textures/entity/minecart/tuff_cart.png"
+  }
+}
