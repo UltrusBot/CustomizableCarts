@@ -77,7 +77,7 @@ publishMods {
         tagName = "v$project.version"
     }
 
-    dryRun = true
+    dryRun = false
 }
 
 def targetJavaVersion = 21
