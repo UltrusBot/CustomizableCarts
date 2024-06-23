@@ -18,7 +18,9 @@
       "when": "moving", // "moving", "always", "still"
       "particle": {
         "type": "minecraft:note"
-      }
+      },
+      "frequency": 0.1, // 0 - 1, chance per tick
+      "amount": 10 // how many particles per spawn
     }
   ],
   "move_sound": "minecraft:entity.minecart.riding"
