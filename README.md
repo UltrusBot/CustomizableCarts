@@ -21,3 +21,7 @@ Yes! The first full release will be on neoforge & fabric. This mod was made for 
 **How do I add my own carts?**
 
 I plan on writing up a wiki detailing the cart creation process, but for now you can just follow by example, and look at the json files for the current carts [here](https://github.com/UltrusBot/CustomizableCarts/tree/main/src/main/generated/data/customizablecarts/customizablecarts/cart_body)
+
+**Is this mod currently survival friendly?**
+
+No not yet entirely, the cart body's are currently unobtainable in survival. 

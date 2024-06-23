@@ -1,6 +1,7 @@
 plugins {
     id 'fabric-loom' version '1.6-SNAPSHOT'
     id 'maven-publish'
+    alias libs.plugins.publishing
 }
 
 version = project.mod_version
@@ -44,6 +45,39 @@ processResources {
                 "minecraft_version": libs.minecraft.get().version,
                 "loader_version": libs.fabric.loader.get().version
     }
+}
+
+publishMods {
+    displayName = "Customizable Carts Beta v$project.version+${libs.minecraft.get().getVersionConstraint().displayName}"
+    file = remapJar.archiveFile
+    changelog = file("$rootDir/CHANGELOG.md").text
+    version = "v${project.version}}"
+    type = BETA
+    modLoaders.addAll("fabric", "quilt")
+    curseforge {
+        projectId = "1046930"
+        minecraftVersions.add("1.21")
+        accessToken = providers.gradleProperty("CF_API_KEY")
+        requires {
+            slug = "fabric-api"
+        }
+    }
+    modrinth {
+        projectId = "N5SI6Kbt"
+        minecraftVersions.add("1.21")
+        accessToken = providers.gradleProperty("MODRINTH_TOKEN")
+        requires {
+            slug = "fabric-api"
+        }
+    }
+    github {
+        repository = "UltrusBot/CustomizableCarts"
+        commitish = "main"
+        accessToken = providers.gradleProperty("GH_TOKEN")
+        tagName = "v$project.version"
+    }
+
+    dryRun = false
 }
 
 def targetJavaVersion = 21
