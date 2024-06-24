@@ -4,6 +4,7 @@ import me.ultrusmods.customizablecarts.CustomizableCarts;
 import me.ultrusmods.customizablecarts.client.model.CartBodyModels;
 import me.ultrusmods.customizablecarts.client.model.RegularMinecartModel;
 import me.ultrusmods.customizablecarts.client.model.TwoLayerMinecartModel;
+import me.ultrusmods.customizablecarts.client.model.TwoLayerWithSquareMinecartModel;
 import me.ultrusmods.customizablecarts.client.renderer.CustomizableMinecartRenderer;
 import me.ultrusmods.customizablecarts.registry.CustomizableCartsEntities;
 import net.fabricmc.api.ClientModInitializer;
@@ -14,6 +15,7 @@ import net.minecraft.client.model.geom.ModelLayerLocation;
 public class CustomizableCartsClient implements ClientModInitializer {
     public static final ModelLayerLocation CUSTOMIZABLE_CART_LAYER = new ModelLayerLocation(CustomizableCarts.id("customizable_cart"), "main");
     public static final ModelLayerLocation TWO_LAYER_CUSTOMIZABLE_CART_LAYER = new ModelLayerLocation(CustomizableCarts.id("two_layer_customizable_cart"), "main");
+    public static final ModelLayerLocation TWO_LAYER_CUSTOMIZABLE_CART_WITH_SQUARE_LAYER = new ModelLayerLocation(CustomizableCarts.id("two_layer_customizable_cart_with_square"), "main");
 
     @Override
     public void onInitializeClient() {
@@ -30,6 +32,10 @@ public class CustomizableCartsClient implements ClientModInitializer {
         EntityModelLayerRegistry.registerModelLayer(
                 TWO_LAYER_CUSTOMIZABLE_CART_LAYER,
                 TwoLayerMinecartModel::createBodyLayer
+        );
+        EntityModelLayerRegistry.registerModelLayer(
+                TWO_LAYER_CUSTOMIZABLE_CART_WITH_SQUARE_LAYER,
+                TwoLayerWithSquareMinecartModel::createBodyLayer
         );
 
         CartBodyModels.init();

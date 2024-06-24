@@ -1,0 +1,7 @@
+{
+  "item": "customizablecarts:end_frame_minecart",
+  "model": {
+    "type": "customizablecarts:two_layer_with_square",
+    "texture": "customizablecarts:textures/entity/minecart/end_frame_cart.png"
+  }
+}

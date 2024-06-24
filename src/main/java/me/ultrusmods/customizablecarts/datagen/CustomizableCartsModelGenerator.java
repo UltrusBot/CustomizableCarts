@@ -29,5 +29,6 @@ public class CustomizableCartsModelGenerator extends FabricModelProvider {
         itemModelGenerator.generateFlatItem(CustomizableCartItems.MUSIC_MINECART, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(CustomizableCartItems.TRIAL_MINECART, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(CustomizableCartItems.TUFF_MINECART, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(CustomizableCartItems.END_FRAME_MINECART, ModelTemplates.FLAT_ITEM);
     }
 }
