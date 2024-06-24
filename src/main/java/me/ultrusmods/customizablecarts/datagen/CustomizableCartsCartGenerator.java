@@ -2,6 +2,7 @@ package me.ultrusmods.customizablecarts.datagen;
 
 import me.ultrusmods.customizablecarts.CustomizableCarts;
 import me.ultrusmods.customizablecarts.model.DefaultCartModelType;
+import me.ultrusmods.customizablecarts.model.DuckCartModelType;
 import me.ultrusmods.customizablecarts.model.TwoLayerCartModelType;
 import me.ultrusmods.customizablecarts.model.TwoLayerWithSquareCartModelType;
 import me.ultrusmods.customizablecarts.part.CartBody;
@@ -96,6 +97,12 @@ public class CustomizableCartsCartGenerator extends FabricCodecDataProvider<Cart
                         CustomizableCarts.id("textures/entity/minecart/end_frame_cart.png")
                 ),
                 CustomizableCartItems.END_FRAME_MINECART
+        ));
+        addCartPart(provider, "duck_cart", new CartBody(
+                new DuckCartModelType(
+                        CustomizableCarts.id("textures/entity/minecart/duck_cart.png")
+                ),
+                CustomizableCartItems.DUCK_MINECART
         ));
     }
 

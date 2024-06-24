@@ -17,6 +17,7 @@ public class CartBodies {
     public static final ResourceKey<CartBody> TRIAL_CART = createKey("trial_cart");
     public static final ResourceKey<CartBody> TUFF_CART = createKey("tuff_cart");
     public static final ResourceKey<CartBody> END_FRAME_CART = createKey("end_frame_cart");
+    public static final ResourceKey<CartBody> DUCK_CART = createKey("duck_cart");
 
     private static ResourceKey<CartBody> createKey(String id) {
         return ResourceKey.create(CustomizableCartsRegistryKeys.CART_BODY_KEY, CustomizableCarts.id(id));

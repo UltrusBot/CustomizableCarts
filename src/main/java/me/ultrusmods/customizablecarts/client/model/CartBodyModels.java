@@ -20,9 +20,11 @@ public class CartBodyModels {
         CART_BODY_MODELS.put(CustomizableCartModelTypes.DEFAULT, RegularMinecartModel::new);
         CART_BODY_MODELS.put(CustomizableCartModelTypes.TWO_LAYER, TwoLayerMinecartModel::new);
         CART_BODY_MODELS.put(CustomizableCartModelTypes.TWO_LAYER_WITH_SQUARE, TwoLayerWithSquareMinecartModel::new);
+        CART_BODY_MODELS.put(CustomizableCartModelTypes.DUCK, DuckMinecartModel::new);
 
         CART_BODY_LAYERS.put(CustomizableCartModelTypes.DEFAULT, CustomizableCartsClient.CUSTOMIZABLE_CART_LAYER);
         CART_BODY_LAYERS.put(CustomizableCartModelTypes.TWO_LAYER, CustomizableCartsClient.TWO_LAYER_CUSTOMIZABLE_CART_LAYER);
         CART_BODY_LAYERS.put(CustomizableCartModelTypes.TWO_LAYER_WITH_SQUARE, CustomizableCartsClient.TWO_LAYER_CUSTOMIZABLE_CART_WITH_SQUARE_LAYER);
+        CART_BODY_LAYERS.put(CustomizableCartModelTypes.DUCK, CustomizableCartsClient.DUCK_CART_LAYER);
     }
 }

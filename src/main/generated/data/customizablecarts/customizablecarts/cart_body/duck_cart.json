@@ -1,0 +1,7 @@
+{
+  "item": "customizablecarts:duck_minecart",
+  "model": {
+    "type": "customizablecarts:duck",
+    "texture": "customizablecarts:textures/entity/minecart/duck_cart.png"
+  }
+}

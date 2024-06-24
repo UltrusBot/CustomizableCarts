@@ -24,6 +24,7 @@ public class CustomizableCartItems {
     public static final Item MUSIC_MINECART = registerCartBody("music_minecart", CartBodies.MUSIC_CART);
     public static final Item TUFF_MINECART = registerCartBody("tuff_minecart", CartBodies.TUFF_CART);
     public static final Item END_FRAME_MINECART = registerCartBody("end_frame_minecart", CartBodies.END_FRAME_CART);
+    public static final Item DUCK_MINECART = registerCartBody("duck_minecart", CartBodies.DUCK_CART);
 
     public static final CreativeModeTab TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, CustomizableCarts.id("items"), FabricItemGroup.builder()
             .icon(Items.MINECART::getDefaultInstance)
@@ -40,6 +41,7 @@ public class CustomizableCartItems {
                         output.accept(CustomizableCartItems.MUSIC_MINECART);
                         output.accept(CustomizableCartItems.TUFF_MINECART);
                         output.accept(CustomizableCartItems.END_FRAME_MINECART);
+                        output.accept(CustomizableCartItems.DUCK_MINECART);
                     })
             .build());
     public static void init() {
