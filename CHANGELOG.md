@@ -1,2 +1,1 @@
-- Add End Frame Cart, a end frame themed cart
-- Add Duckart, a duck cart
+- Make duck bill longer in item texture
