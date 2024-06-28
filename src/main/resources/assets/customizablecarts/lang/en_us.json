@@ -11,5 +11,6 @@
   "item.customizablecarts.music_minecart": "Music Minecart",
   "item.customizablecarts.tuff_minecart": "Tuff Minecart",
   "item.customizablecarts.end_frame_minecart": "End Frame Minecart",
-  "item.customizablecarts.duck_minecart": "Duckart"
+  "item.customizablecarts.duck_minecart": "Duckart",
+  "entity.customizablecarts.customizable_minecart": "Customizable Minecart"
 }

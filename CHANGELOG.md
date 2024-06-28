@@ -1,1 +1,1 @@
-- Make duck bill longer in item texture
+- Add translation key to customizable cart entity
