@@ -1,1 +1,2 @@
-- Add translation key to customizable cart entity
+- Add customizable cart entity to minecart c entity tag.
+- Make customizable minecarts ejectable from dispensers.

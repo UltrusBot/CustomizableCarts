@@ -9,6 +9,7 @@ public class CustomizableCartsDatagen implements DataGeneratorEntrypoint {
         var pack = fabricDataGenerator.createPack();
         pack.addProvider(CustomizableCartsCartGenerator::new);
         pack.addProvider(CustomizableCartsModelGenerator::new);
+        pack.addProvider(CustomizableCartsTagGenererator::new);
 
     }
 }
